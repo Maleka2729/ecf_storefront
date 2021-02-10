@@ -1,0 +1,94 @@
+/* style pour la banniere */
+.section {
+    background-image: url('./media/plates-header.jpg');
+    height: 50%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+/* style pour le menu dropdown */
+.shopping-cart {
+    padding: 8%;
+    width: 480px;
+}
+
+.card-body {
+    padding: 0px;
+    padding-left: 20px;
+}
+
+#price {
+    justify-content: end;
+    display: grid;
+}
+
+.button-dropdown {
+    width: 100%;
+    border-radius: inherit;
+}
+
+/* style pour la description du texte dans la banniere */
+.banner {
+    background-color: #393935;
+    color: white;
+    border: 0;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    width: 60%;
+    padding: 3%;
+    margin: auto;
+    height: 50%;
+    max-height: auto;
+}
+
+.separator {
+    width: 14%;
+    margin-left: 43%;
+}
+
+/* style pour l'affichage des articles */
+.bloc-article {
+    padding: 3%;
+}
+
+.card {
+    width: 100%;
+}
+
+.article-card {
+    text-align: center;
+}
+
+/* mouseover article */
+.mousover-button {
+    top: 0;
+    height: 300px;
+    background-color: rgba(43, 56, 43, 0.384);
+    width: 100%;
+    position: absolute;
+    display: none;
+    margin-left: 1px;
+}
+
+.img-mouseover:hover + .mousover-button {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+.button-article {
+    width: 45%;
+    border-radius: inherit;
+    margin: auto;
+    display: block;
+}
+
+#button-article-1{
+    margin-top: 25%;
+}
+
+#button-article-2{
+    margin-top: 11%;
+}
