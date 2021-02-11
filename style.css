@@ -1,11 +1,5 @@
-/* style pour la banniere */
-.section {
-    background-image: url('./media/plates-header.jpg');
-    height: 50%;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
+.nav-link{
+    color: black;
 }
 
 /* style pour le menu dropdown */
@@ -19,6 +13,10 @@
     padding-left: 20px;
 }
 
+.card {
+    box-shadow: none;
+}
+
 #price {
     justify-content: end;
     display: grid;
@@ -27,6 +25,14 @@
 .button-dropdown {
     width: 100%;
     border-radius: inherit;
+}
+
+.shopping:hover {
+    text-decoration: underline;
+}
+
+.total-price {
+    color: grey;
 }
 
 /* style pour la description du texte dans la banniere */
@@ -41,6 +47,16 @@
     margin: auto;
     height: 50%;
     max-height: auto;
+}
+
+/* style pour la banniere */
+.section {
+    background-image: url('./media/plates-header.jpg');
+    height: 50%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 
 .separator {
@@ -91,4 +107,104 @@
 
 #button-article-2{
     margin-top: 11%;
+}
+
+/* Style pour un écran de 2560px */
+@media screen and (max-width: 2560px) {
+    .img_atl {
+        height: 300px;
+    }
+}
+
+/* Style pour un écran de 1024px */
+@media screen and (max-width: 1024px) {
+    #button-article-1,
+    #button-article-2 {
+        margin-top: 15%;
+        font-size: 11px;
+    }
+    .img-mouseover:hover + .mousover-button {
+        display: block;
+        height: 200px;
+        width: 100%;
+    }
+    .img_atl {
+        height: 200px;
+    }
+}
+
+/* Style pour un écran de 768px */
+@media screen and (max-width: 768px) {
+    #button-article-1,
+    #button-article-2 {
+        margin-top: 15%;
+        font-size: 8px;
+    }
+    .txt{
+        font-size: 15px;
+    }
+
+    .img_atl {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .img-mouseover:hover + .mousover-button {
+        display: block;
+        height: 140px;
+        width: 100%;
+    }
+    #button-article-1,
+    #button-article-2 {
+        margin-top: 12%;
+        font-size: 6px;
+    }
+    .price-article,
+    .categorie-article{
+        font-size: 11px;
+    }
+    .name-article{
+        font-size: 12px;
+    }
+    .button-lock{
+        margin: -12px;
+    }
+    .shopping{
+        display: none;
+    }
+    .separator{
+        display: none;
+    }
+    .title_site{
+        font-size: 17px;
+    }
+    .txt{
+        font-size: 8px;
+    }
+    .img_atl {
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .img-mouseover:hover + .mousover-button {
+        display: block;
+        height: 130px;
+        width: 100%;
+    }
+    #button-article-1,
+    #button-article-2 {
+        margin-top: 10%;
+        font-size: 5px;
+    }
+    .title_site{
+        font-size: 14px;
+    }
+    .txt{
+        font-size: 5px;
+    }
+    .img_atl {
+        height: 130px;
+    }
 }
