@@ -12,6 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -176,8 +177,8 @@
                             <tr>
                                 <th class="col-sm-8">PRODUCT</th>
                                 <th class="col-sm-2">QUANTITY</th>
-                                <th class="col-sm-1" >TOTAL</th>
-                                <th class="col-sm-1" >ACTION</th>
+                                <th class="col-sm-1">TOTAL</th>
+                                <th class="col-sm-1">ACTION</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -201,9 +202,28 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><input class="form-control" type="text" value="1" /></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="well">1
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="well">+ </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="well">  - </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="text-right">$28.00</td>
-                                <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>
+                                <td class="text-right"><i class="fas fa-times"></i>
                                     </button> </td>
                             </tr>
                             <tr>
@@ -217,43 +237,79 @@
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <p class="card-text">
-                                                        <p class="text-muted">KIRIKO</p> 
+                                                        <p class="text-muted">KIRIKO</p>
                                                     </p>
                                                     <h6 class="card-title">MASHIKO-YAKI INDIGO SMALL PLATE </h6>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
-                                <td><input class="form-control" type="text" value="1" /></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="well">1
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="well">+ </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="well">  - </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td class="text-right">$28.00</td>
-                                <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>
+                                <td class="text-right"><i class="fas fa-times"></i>
                                     </button> </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>SUBTOTAL</td>
-                                <td class="text-right">$56.00</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>TOTAL</td>
-                                <td class="text-right">$56.00 CAD</td>
                             </tr>
                         </tbody>
                     </table>
+
                 </div>
             </div>
-            <div class="col mb-2">
-                <div class="row">
+
+            <table class="table table-borderless ">
+                <thead>
+                    <tr>
+                        <th class="col-sm-3"></th>
+                        <th class="col-sm-3"></th>
+                        <th class="col-sm-3 text-muted">CART OVERVIEW</th>
+                        <th class="col-sm-3"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="text-muted">SUBTOTAL</td>
+                        <td class="text-end">$56.00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="text-muted">TOTAL</td>
+                        <td class="text-end">$56.00 CAD</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row justify-content-between ">
+                <div class="row ">
                     <div class="col-sm-12  col-md-6">
-                        <button class="btn btn-block btn-light">Continue Shopping</button>
+                        <a class="nav-link" role="button" aria-expanded="false">
+                            <span class='shopping'>CONTINUE SHOPPING</span>
+                        </a>
                     </div>
-                    <div class="col-sm-12 col-md-6 text-right">
-                        <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                    <div class=" col-sm-12 col-md-6 col align-self-end">
+                        <button class="btn btn-dark btn-lg button-article ">CHECKOUT</button>
                     </div>
                 </div>
             </div>
