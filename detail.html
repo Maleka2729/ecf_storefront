@@ -12,13 +12,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
-
-    <link rel="stylesheet" href="style-shopping.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg main-nav">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid justify-content-between">
 
             <!-- Toggle button -->
@@ -77,23 +76,22 @@
 
             <!-- Right elements -->
             <ul class="navbar-nav flex-row">
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                <button class="navbar-toggler button-lock" type="button" data-mdb-toggle="collapse"
                     data-mdb-target="#navbarLeftAlignExample" aria-controls="navbarLeftAlignExample"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-lock">(2)</i>
-
                 </button>
 
                 <!-- Navbar dropdown -->
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-mdb-toggle="dropdown" aria-expanded="false">
-                        <span class='shopping'>MY CART (2)</span>
+                        <span class='shopping'>MY CART (2)</span> 
                     </a>
 
                     <!-- Dropdown menu -->
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
-                        <div class="shopping-cart">
+                    <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="navbarDropdown">
+                        <div class="shopping-cart ">
                             <li>
                                 <div class="card mb-3">
                                     <div class="row g-0">
@@ -137,21 +135,21 @@
 
                             <hr>
 
-                            <div class="row total-header-section">
-                                <div class="col-lg-6 col-sm-6 col-6">
+                            <div class="row total-header-section ">
+                                <div class="col-lg-6 col-sm-6 col-6 tex">
                                     <p>TOTAL</p>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
-                                    <p id="price "><span>$56.00</span></p>
+                                <div class="col-lg-6 col-sm-6 col-6 total-section text-right text-muted">
+                                    <p id="price"><span>$56.00</span></p>
                                 </div>
                             </div>
 
                             <div class="row total-header-section">
                                 <div class="col-lg-6 col-sm-6 col-6">
-                                    <button type="button" class="btn btn-outline-dark btn-lg button-dropdown">VIEW
+                                    <button type="button" class="btn btn-outline-dark btn-lg button-dropdown"  href="shoppingCart.html"> VIEW
                                         CART</button>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
+                                <div class="col-lg-6 col-sm-6 col-6 total-section text-right te">
                                     <button type="button" class="btn btn-dark btn-lg button-dropdown">CHECKOUT</button>
                                 </div>
                             </div>
@@ -162,163 +160,4 @@
         </div>
     </nav>
 
-    <!-- texte centrale shopping cart -->
-    <div class="jumbotron text-center title-page">
-        <div class="container">
-            <h1 class="jumbotron-heading">Shopping Cart</h1>
-        </div>
-    </div>
-
-    <!-- Description du panier du client -->
-    <div class="container cart-description ">
-
-        <div class="row name-categorie">
-            <div class="col-sm-8">PRODUCT</div>
-            <div class="col-sm-2">QUANTITY</div>
-            <div class="col-sm-1">TOTAL</div>
-            <div class="col-sm-1 action">ACTION</div>
-        </div>
-
-        <hr>
-
-        <!-- Premier article -->
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./media/hand-painted-blue-flat-dish.jpg" alt="..." class="figure-img img-fluid" />
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <p class="text-muted">KIRIKO</p>
-                                    <h6 class="card-title">HAND PAINTED BLUE FLAT DISH </h6>
-                                </p>
-                                <p class="text-muted">COLOR : <span>WHITE</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="well text-center quantity">1
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="well plus">+ </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="well less"> - </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1">
-                <td class="text-right">$28.00</td>
-            </div>
-            <div class="col-sm-1">
-                <td class="text-right"><i class="fas fa-times cross"></i></td>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Second article -->
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./media/mashiko-yaki-indigo-small-plate.jpg" class="figure-img img-fluid"
-                                alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <p class="text-muted">KIRIKO</p>
-                                </p>
-                                <h6 class="card-title">MASHIKO-YAKI INDIGO SMALL PLATE </h6>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="well text-center quantity"> 1
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="well plus">+ </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="well less"> - </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1">
-                <td class="text-right">$28.00</td>
-            </div>
-            <div class="col-sm-1">
-                <td class="text-right"><i class="fas fa-times cross"></i></td>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Total de l'achat -->
-        <div class="row carte-overview">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-3 text-muted">CART OVERVIEW</div>
-            <div class="col-sm-3"></div>
-        </div>
-
-        <div class="row subtotal">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-3 text-muted">SUBTOTAL</div>
-            <div class="col-sm-3 text-end text-muted"> $56.00</div>
-        </div>
-
-        <div class="row total">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-3"></div>
-            <div class="col-sm-3 text-muted">TOTAL</div>
-            <div class="col-sm-3 text-end"> <strong> $56.00 CAD </strong></div>
-        </div>
-
-        <hr>
-        
-        <!-- Boutton pour valider la commande -->
-        <div class="row ">
-            <div class="col-6 ">
-                <a class="nav-link" role="button" aria-expanded="false">
-                    <span class='shopping'>CONTINUE SHOPPING</span>
-                </a>
-            </div>
-            <div class="col-6 text-end ">
-                <button class="btn btn-dark btn-lg checkout">CHECKOUT ($56.00)</button>
-            </div>
-        </div>
-    </div>
-
-</body>
-
-</html>
+    

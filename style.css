@@ -1,3 +1,4 @@
+/* style pour la navbar */
 .nav-link{
     color: black;
 }
@@ -7,32 +8,23 @@
     padding: 8%;
     width: 480px;
 }
-
 .card-body {
     padding: 0px;
     padding-left: 20px;
 }
-
 .card {
     box-shadow: none;
 }
-
 #price {
     justify-content: end;
     display: grid;
 }
-
 .button-dropdown {
     width: 100%;
     border-radius: inherit;
 }
-
 .shopping:hover {
     text-decoration: underline;
-}
-
-.total-price {
-    color: grey;
 }
 
 /* style pour la description du texte dans la banniere */
@@ -58,7 +50,6 @@
     background-position: center;
     background-size: 100% auto;
 }
-
 .separator {
     width: 14%;
     margin-left: 43%;
@@ -68,11 +59,9 @@
 .bloc-article {
     padding: 3%;
 }
-
 .card {
     width: 100%;
 }
-
 .article-card {
     text-align: center;
 }

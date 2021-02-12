@@ -1,0 +1,118 @@
+body{
+    background-color:#f1eaea63 ;
+}
+/* style pour la navbar */
+.nav-link{
+    color: black;
+}
+
+.main-nav{
+    box-shadow: none;
+    background-color: white;
+}
+
+/* style pour le menu dropdown */
+.shopping-cart {
+    padding: 8%;
+    width: 480px;
+}
+.card-body {
+    padding: 0px;
+    padding-left: 20px;
+}
+.card {
+    box-shadow: none;
+}
+#price {
+    justify-content: end;
+    display: grid;
+}
+.button-dropdown {
+    width: 100%;
+    border-radius: inherit;
+}
+
+
+/* Style pour le texte central */
+.title-page{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/* Style pour la descrption du panier du client */
+.cart-description{
+    background-color: white;
+    padding: 90px 60px 20px 60px; ;
+}
+
+.name-categoerie{
+    margin-bottom: 40px;
+}
+
+.carte-overview{
+    margin-top: 20px;
+}
+
+.subtotal{
+    margin: 20px 0 20px 0;
+}
+
+.total{
+    margin-bottom: 20px;
+}
+
+/* style pour la quantité */
+.quantity{
+    left: 25px;
+    bottom: -15px;
+    background-color: #dcdcdc;
+    height: 53px;
+    width: 64px;
+    padding-top: 13px;
+}
+
+.plus,
+.less {
+    left: 25px;
+    bottom: -15px;
+    background-color: #a2a2a2;
+    height: 25px;
+    width: 23px;
+    margin-bottom: 3px;
+    padding-left: 8px;
+}
+
+.cross{
+    padding-left: 40%;
+}
+
+/* Style pour les bouttons de validation */
+.command-valid{
+    background-color: white;
+}
+.shopping {
+    text-decoration: underline;
+}
+
+.checkout{
+    border-radius: inherit;
+    box-shadow: none;
+    width: 45%;
+    height: 50px;
+}
+
+/* Style pour un écran de 768px */
+@media screen and (max-width: 768px) {
+
+    /* style pour la quantité */
+    .quantity{
+        width: 31px;
+    }
+    .checkout {
+        width: 68%;
+        height: 40px;
+    }
+    .action{
+        display: none;
+    }
+}
