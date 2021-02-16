@@ -1,0 +1,43 @@
+/* style pour la navbar */
+.nav-link{
+    color: black;
+}
+.main-nav{
+    box-shadow: none;
+    background-color: white;
+    border-bottom: 1px solid #c5c1c1;
+}
+
+/* style pour le menu dropdown */
+.shopping-cart {
+    padding: 8%;
+    width: 480px;
+}
+.card-body {
+    padding: 0px;
+    padding-left: 20px;
+}
+.card {
+    box-shadow: none;
+}
+#price {
+    justify-content: end;
+    display: grid;
+}
+.button-dropdown {
+    width: 100%;
+    border-radius: inherit;
+}
+.shopping:hover {
+    text-decoration: underline;
+}
+
+/* style pour l'image'*/
+.hand-painted{
+    height: 470px;
+}
+
+/* style pour le breadcrumb */
+.breadcrumb{
+    margin: 50px 0 70px 0;
+}

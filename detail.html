@@ -12,12 +12,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" rel="stylesheet" />
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-description.css">
 </head>
 
 <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg main-nav">
         <div class="container-fluid justify-content-between">
 
             <!-- Toggle button -->
@@ -86,7 +86,7 @@
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-mdb-toggle="dropdown" aria-expanded="false">
-                        <span class='shopping'>MY CART (2)</span> 
+                        <span class='shopping'>MY CART (2)</span>
                     </a>
 
                     <!-- Dropdown menu -->
@@ -146,7 +146,8 @@
 
                             <div class="row total-header-section">
                                 <div class="col-lg-6 col-sm-6 col-6">
-                                    <button type="button" class="btn btn-outline-dark btn-lg button-dropdown"  href="shoppingCart.html"> VIEW
+                                    <button type="button" class="btn btn-outline-dark btn-lg button-dropdown"
+                                        href="shoppingCart.html"> VIEW
                                         CART</button>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-6 total-section text-right te">
@@ -160,4 +161,95 @@
         </div>
     </nav>
 
-    
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <strong>HOME</strong> </li>
+            <li class="breadcrumb-item"> <strong>PLATES</strong></li>
+            <li class="breadcrumb-item active text-muted" aria-current="page">HAND PAINTED BLUE FLAT DISH</li>
+        </ol>
+    </nav>
+
+    <div class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mb-4 mb-md-0">
+
+                    <div id="mdb-lightbox-ui"></div>
+
+                    <div class="mdb-lightbox">
+
+                        <div class="row product-gallery mx-1">
+
+                            <div class="col-12 mb-0">
+                                <figure class="view overlay rounded z-depth-1 main-img">
+                                    <a>
+                                        <img class="hand-painted" src="./media/hand-painted-blue-flat-dish.jpg" class="img-fluid z-depth-1">
+                                    </a>
+                                </figure>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-5">
+                    <p class="mb-2 text-muted text-uppercase small text-center">Kiriko</p>
+
+                    <h2 class="text-center">Hand Painted Blue Flat Dish</h2>
+
+                    <p class="text-center"><span class="mr-1">
+                            <strong >$28.00</strong>
+                        </span></p>
+
+                    <p class="pt-1 text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at purus pulvinar, placerat
+                        turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. curbitur ac
+                        pharetra nisl, sit amet...
+                    </p>
+
+                    <hr>
+
+                    <div class="table-responsive mb-2 text-center">
+                        <table class="table table-sm table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td class="pl-0">
+                                        <div class="col-sm">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="well text-center quantity">1
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="well plus">+ </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="well less"> - </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="mt-1">
+                                            <button type="button" class="btn btn-light btn-md mr-1 mb-2"> Add to cart </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
