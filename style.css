@@ -1,3 +1,10 @@
+body{
+    font-family: system-ui;
+}
+
+h1{
+    font-family: serif;
+}
 /* style pour la navbar */
 .nav-link{
     color: black;
@@ -6,7 +13,7 @@
 /* style pour le menu dropdown */
 .shopping-cart {
     padding: 8%;
-    width: 480px;
+    width: 480px; 
 }
 .card-body {
     padding: 0px;
@@ -25,6 +32,18 @@
 }
 .shopping:hover {
     text-decoration: underline;
+}
+.cross_one {
+    height: 16px;
+    display: block;
+    position: absolute;
+    left: 408px;
+    bottom: 83px;
+}
+.cross_two{
+    height: 16px;
+    position: absolute;
+    left: 408px;
 }
 
 /* style pour la description du texte dans la banniere */
@@ -64,6 +83,9 @@
 }
 .article-card {
     text-align: center;
+}
+.price-article{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* mouseover article */
@@ -136,9 +158,48 @@
     .img_atl {
         height: 200px;
     }
+    .shopping,
+    .center-element{
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 425px) {
+    .shopping-cart{
+        padding: 8%;
+        width: 300px;
+    }
+    .img-article{
+        height: 69px;
+    }
+    .title-article{
+        font-size: 10px;
+    }
+    .description-article{
+        float: left;
+        position: absolute;
+        left: 100px;
+        width: 140px;
+        font-size: 10px;
+        bottom: 12px;
+    }
+    .cross_one {
+        height: 12px;
+        display: block;
+        position: absolute;
+        left: 238px;
+        bottom: 65px;
+    }
+    .cross_two{
+        height: 12px;
+        position: absolute;
+        left: 238px;
+    }
+    .button-validation,
+    .total-price{
+        font-size: 11px;
+    }
     .img-mouseover:hover + .mousover-button {
         display: block;
         height: 140px;
@@ -159,12 +220,6 @@
     .button-lock{
         margin: -12px;
     }
-    .shopping{
-        display: none;
-    }
-    .separator{
-        display: none;
-    }
     .title_site{
         font-size: 17px;
     }
@@ -173,6 +228,9 @@
     }
     .img_atl {
         height: 140px;
+    }
+    .separator{
+        display: none;
     }
 }
 

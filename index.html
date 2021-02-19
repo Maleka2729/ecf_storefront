@@ -13,6 +13,7 @@
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- lien pour des icones -->
 </head>
 
 <body>
@@ -37,41 +38,43 @@
             <!-- Left elements -->
 
             <!-- Center elements -->
-            <ul class="navbar-nav flex-row d-none d-md-flex">
+            <div class="center-element">
+                <ul class="navbar-nav flex-row d-none d-md-flex">
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
 
-                <!-- Navbar dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-mdb-toggle="dropdown" aria-expanded="false">
-                        SHOP
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="shoppingCart.html">SHOPPING CART</a></li>
-                        <li><a class="dropdown-item" href="#">SHOP 2</a></li>
-                    </ul>
-                </li>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="shoppingCart.html">SHOPPING CART</a></li>
+                            <li><a class="dropdown-item" href="#">SHOP 2</a></li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">JOURNAL</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">JOURNAL</a>
+                    </li>
 
-                <!-- Navbar dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-mdb-toggle="dropdown" aria-expanded="false">
-                        MORE
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">MORE 1</a></li>
-                        <li><a class="dropdown-item" href="#">MORE 2</a></li>
-                    </ul>
-            </ul>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            MORE
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">MORE 1</a></li>
+                            <li><a class="dropdown-item" href="#">MORE 2</a></li>
+                        </ul>
+                </ul>
+            </div>
             <!-- Center elements -->
 
             <!-- Right elements -->
@@ -86,7 +89,7 @@
                 <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-mdb-toggle="dropdown" aria-expanded="false">
-                        <span class='shopping'>MY CART (2)</span> 
+                        <span class='shopping'>MY CART (2)</span>
                     </a>
 
                     <!-- Dropdown menu -->
@@ -96,12 +99,13 @@
                                 <div class="card mb-3">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./media/hand-painted-blue-flat-dish.jpg" alt="..."
-                                                class="figure-img img-fluid" />
+                                            <img src="./media/hand-painted-blue-flat-dish.jpg" alt="assiette plate avec dessin de fleur"
+                                                class="figure-img img-fluid img-article" />
+                                                <img class="cross_one" src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png" alt="croix"/>
                                         </div>
                                         <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h6 class="card-title">HAND PAINTED BLUE FLAT DISH <small>x1</small>
+                                            <div class="card-body description-article one">
+                                                <h6 class="card-title title-article">HAND PAINTED BLUE FLAT DISH <small>x1</small>
                                                 </h6>
                                                 <p class="card-text">
                                                     <small class="text-muted">KIRIKO</small> <br>
@@ -117,11 +121,12 @@
                                     <div class="row g-0">
                                         <div class="col-md-4">
                                             <img src="./media/mashiko-yaki-indigo-small-plate.jpg"
-                                                class="figure-img img-fluid" alt="...">
+                                                class="figure-img img-fluid img-article" alt="petite assiette bleu">
+                                                <img class="cross_two" src="https://img.icons8.com/ios/50/000000/delete-sign--v1.png " alt="croix"/>
                                         </div>
                                         <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h6 class="card-title">MASHIKO-YAKI INDIGO SMALL PLATE <small>x1</small>
+                                            <div class="card-body description-article">
+                                                <h6 class="card-title title-article">MASHIKO-YAKI INDIGO SMALL PLATE <small>x1</small>
                                                 </h6>
                                                 <p class="card-text">
                                                     <small class="text-muted">KIRIKO</small> <br>
@@ -135,7 +140,7 @@
 
                             <hr>
 
-                            <div class="row total-header-section ">
+                            <div class="row total-header-section total-price">
                                 <div class="col-lg-6 col-sm-6 col-6 tex">
                                     <p>TOTAL</p>
                                 </div>
@@ -144,13 +149,14 @@
                                 </div>
                             </div>
 
-                            <div class="row total-header-section">
+                            <div class="row total-header-section ">
                                 <div class="col-lg-6 col-sm-6 col-6">
-                                    <button type="button" class="btn btn-outline-dark btn-lg button-dropdown"  href="shoppingCart.html"> VIEW
+                                    <button type="button" class="btn btn-outline-dark btn-lg button-dropdown button-validation"
+                                        href="shoppingCart.html"> VIEW
                                         CART</button>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-6 total-section text-right te">
-                                    <button type="button" class="btn btn-dark btn-lg button-dropdown">CHECKOUT</button>
+                                <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
+                                    <button type="button" class="btn btn-dark btn-lg button-dropdown button-validation">CHECKOUT</button>
                                 </div>
                             </div>
                         </div>
@@ -182,8 +188,7 @@
         <div class="row">
             <div class="col-6 col-sm-4">
                 <div class="card">
-                    <img src="media/blue-stripe-stoneware-plate.jpg" class="figure-img img-fluid img_atl" alt="..."
-                        >
+                    <img src="media/blue-stripe-stoneware-plate.jpg" class="figure-img img-fluid img_atl" alt="assiette bleu, marron, blanc">
                     <div class="card-body article-card">
                         <h5 class="card-title text-muted categorie-article">Kiriko</h5>
                         <p class="card-text name-article">BLUE STRIPE STONEWARE PLATE</p>
@@ -194,8 +199,7 @@
             <div class="col-6 col-sm-4">
                 <div class="card">
                     <div class="img-mouseover">
-                        <img src="media/hand-painted-blue-flat-dish.jpg" class="figure-img img-fluid img_atl" alt="..."
-                            >
+                        <img src="media/hand-painted-blue-flat-dish.jpg" class="figure-img img-fluid img_atl" alt="assiette plate avec dessin de fleur">
                     </div>
                     <div class="row mousover-button">
                         <button type="button" class="btn btn-dark btn-lg button-article" id="button-article-1">VIEW
@@ -213,7 +217,7 @@
             </div>
             <div class="col-6 col-sm-4">
                 <div class="card">
-                    <img src="media/heme.jpg" class="figure-img img-fluid img_atl" alt="..." >
+                    <img src="media/heme.jpg" class="figure-img img-fluid img_atl" alt="recipient blanc">
                     <div class="card-body article-card">
                         <h5 class="card-title text-muted categorie-article">Dust & Form</h5>
                         <p class="card-text name-article">HEME</p>
@@ -223,8 +227,7 @@
             </div>
             <div class="col-6 col-sm-4">
                 <div class="card">
-                    <img src="media/mashiko-yaki-green-small-plate.jpg" class="figure-img img-fluid img_atl" alt="..."
-                        >
+                    <img src="media/mashiko-yaki-green-small-plate.jpg" class="figure-img img-fluid img_atl" alt="petite assiette verte">
                     <div class="card-body article-card">
                         <h5 class="card-title text-muted categorie-article">Kiriko</h5>
                         <p class="card-text name-article">MASHIKO-YAKI GREEN SMALL PLATE</p>
@@ -234,8 +237,7 @@
             </div>
             <div class="col-6 col-sm-4">
                 <div class="card">
-                    <img src="media/mashiko-yaki-indigo-small-plate.jpg" class="figure-img img-fluid img_atl" alt="..."
-                        >
+                    <img src="media/mashiko-yaki-indigo-small-plate.jpg" class="figure-img img-fluid img_atl" alt="petite assiette bleu">
                     <div class="card-body article-card">
                         <h5 class="card-title text-muted categorie-article">Kiriko</h5>
                         <p class="card-text name-article">MASHIKO-YAKI INDIGO SMALL PLATE</p>
@@ -245,8 +247,7 @@
             </div>
             <div class="col-6 col-sm-4">
                 <div class="card">
-                    <img src="media/mashiko-yaki-saucer.jpg" class="figure-img img-fluid img_atl" alt=". img_atl.."
-                        >
+                    <img src="media/mashiko-yaki-saucer.jpg" class="figure-img img-fluid img_atl" alt="plat pour sauce bleu">
                     <div class="card-body article-card">
                         <h5 class="card-title text-muted categorie-article">Kiriko</h5>
                         <p class="card-text name-article">MASHIKO-YAKI SAUCER</p>
