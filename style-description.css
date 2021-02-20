@@ -1,3 +1,16 @@
+body{
+    font-family: system-ui;
+}
+
+h2{
+    font-family: serif;
+}
+
+.price-article {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: grey;
+    font-size: 21px;
+}
 /* style pour la navbar */
 .nav-link{
     color: black;
@@ -54,7 +67,6 @@
 /* style pour la quantité */
 .quantity{
     left: 25px;
-    bottom: -15px;
     background-color: #dcdcdc;
     height: 53px;
     width: 47px;
@@ -84,11 +96,147 @@
 
 /* style pour valider la commande */
 .button-add-to-cart{
-    padding: none;
+    position: absolute;
+    margin-left: 170px;
+    top: 541px;
+    width: 14%;
 }
 .add-to-cart{
     border-radius: inherit;
     box-shadow: none;
-    width:58%;
-    height: 50px;
+    width:75%;
+    height: 53px;
+}
+
+.quantity-art{
+        margin-left: 110px;
+}
+
+/* Style pour un écran de 1024px */
+@media screen and (max-width: 1024px) {
+    .quantity {
+        left: 694px;
+        top: 566px;
+        background-color: #dcdcdc;
+        height: 53px;
+        width: 50px;
+        padding-top: 14px;
+        position: absolute;
+    }
+    /* style pour l'image'*/
+    .hand-painted{
+        height: 350px;
+    }
+    .article-description {
+        padding: 0 10px 0 10px;
+    }
+    .quantity-art {
+        margin-left: 100px;
+    }
+    .button-add-to-cart {
+        top: 562px;
+        width: 20%;
+        margin-left: 155px;
+    }
+}
+
+/* Style pour un écran de 768px */
+@media screen and (max-width: 768px) {
+    /* style pour l'image'*/
+    .hand-painted{
+        height: 270px;
+    }
+    .title-description{
+        font-size: 20px;
+    }
+    .article-description {
+        padding-left: 22px;
+    }
+    .article-cat,
+    .description-art,
+    .price-one-art{
+        font-size: 11px;
+    }
+    .price-article {
+        font-size: 20px;
+    }
+    .quantity {
+        left: 490px;
+        top: 496px;
+    }
+    .quantity-art {
+        margin-left: 50px;
+    }
+    .button-add-to-cart {
+        top: 492px;
+        width: 26%;
+        margin-left: 87px;
+    }
+    .dropdown-arrow,
+    .shopping,
+    .center-element{
+        display: none;
+    }
+}
+
+/* Style pour un écran de 425px */
+@media screen and (max-width: 425px) {
+    .dropdown-arrow{
+        display: none;
+    }
+    /* style pour l'image'*/
+    .hand-painted{
+        height: 250px;
+    }
+    .title-description {
+        font-size: 25px;
+    }
+    .button-add-to-cart {
+        top: 723px;
+        width: 47%;
+        margin-left: 155px;
+    } 
+    .quantity {
+        left: 115px;
+        top: 727px;
+    }
+    .plus,
+    .less{
+        position: absolute;
+        left: 168px;
+    }
+    
+    .less{
+        top:755px;
+    }
+    .plus{
+        top:727px;
+    }
+    .price-article {
+        font-size: 20px;
+    }
+}
+
+/* Style pour un écran de 375px */
+@media screen and (max-width: 375px) {
+    .bdrcmb{
+        font-size: 10px;
+    }
+    /* style pour l'image'*/
+    .hand-painted{
+        height: 215px;
+    }
+    .article-description {
+        padding: 0 26px 0 26px;
+    }
+    .quantity {
+        left: 100px;
+    }
+    .plus, .less {
+        left: 153px;
+    }
+    .button-add-to-cart {
+        width: 53%;
+        margin-left: 135px;
+    }
 }

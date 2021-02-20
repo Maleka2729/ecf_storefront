@@ -1,6 +1,12 @@
 body{
     background-color:#f1eaea63 ;
+    font-family: system-ui;
 }
+
+h1{
+    font-family: serif;
+}
+
 
 /* style pour la navbar */
 .nav-link{
@@ -35,6 +41,22 @@ body{
 .shopping:hover {
     text-decoration: underline;
 }
+.cross_one {
+    height: 16px;
+    display: block;
+    position: absolute;
+    left: 408px;
+    bottom: 83px;
+}
+.cross_two{
+    height: 16px;
+    position: absolute;
+    left: 408px;
+}
+.continue{
+    font-size : 14px;
+    text-decoration: underline;
+}
 
 /* Style pour le texte central */
 .title-page{
@@ -66,7 +88,7 @@ body{
     bottom: -15px;
     background-color: #dcdcdc;
     height: 53px;
-    width: 64px;
+    width: 55px;
     padding-top: 13px;
 }
 .plus,
@@ -77,10 +99,14 @@ body{
     height: 25px;
     width: 23px;
     margin-bottom: 3px;
+    margin-left: -10px;
     padding-left: 8px;
 }
 .cross{
     padding-left: 40%;
+}
+.subtotal-article{
+    padding-top: 23px;
 }
 
 /* Style pour les bouttons de validation */
@@ -97,12 +123,12 @@ body{
     height: 50px;
 }
 
-/* Style pour un écran de 768px */
-@media screen and (max-width: 768px) {
+/* Style pour un écran de 1024px */
+@media screen and (max-width: 1024px) {
 
     /* style pour la quantité */
     .quantity{
-        width: 31px;
+        width: 55px;
     }
     .checkout {
         width: 68%;
@@ -110,5 +136,206 @@ body{
     }
     .action{
         display: none;
+    }
+    .plus,
+    .less {
+        margin-left: 10px;
+    }
+}
+
+/* Style pour un écran de 768px */
+@media screen and (max-width: 768px) {
+
+    /* style pour la quantité */
+    .quantity{
+        width: 55px;
+    }
+    .checkout {
+        width: 68%;
+        height: 40px;
+    }
+    .action{
+        display: none;
+    }
+    .dropdown-arrow,
+    .shopping,
+    .center-element{
+        display: none;
+    }
+    .plus,
+    .less {
+        margin-left: 23px;
+    }
+}
+
+/* Style pour un écran de 425px */
+@media screen and (max-width: 425px) {
+    /* Style pour le jumbotron */
+    .title-page {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+
+    /* Style pour la carte description */
+    .cart-description {
+        padding: 40px 30px 0px 30px;
+        width: 400px;
+    }
+
+    /* Element general */
+    .name-categorie{
+        display: none;
+    }
+    #separator-one{
+        display:none;
+    }
+
+    /* Style card-article */
+    .img-article{
+        height: 75px;
+    }
+    .title-article{
+        font-size: 12px;
+    }
+    .description-article{
+        float: left;
+        position: absolute;
+        left: 100px;
+        width: 214px;
+        font-size: 10px;
+        bottom: 14px;
+    }
+    .color-article,
+    .title-article,
+    .categorie-article{
+        margin-bottom: 4px;
+    }
+    .color-article{
+        margin-bottom: 2px;
+    }
+    .less,
+    .plus,
+    .plus-two,
+    .less-two{
+        margin-left: 23px;
+        float: left;
+        position: absolute;
+        left: 78px;
+    }
+    .less {
+        bottom: 107px;
+    }
+    .plus{
+        bottom: 135px;
+    }
+    .less-two {
+        top: 516px;
+    }
+    .plus-two{
+        top: 488px;
+    }
+    .price-article,
+    .price-article-two{
+        padding-left: 255px;
+        width: 350px;
+        position: absolute;
+        color: grey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+    }
+    .price-article{
+        top: 67%;
+    }
+    .price-article-two{
+        top: 106%;
+    }
+    .cross,
+    .cross-two {
+        padding-left: 76%;
+        position: absolute;
+    }
+    .cross{
+        top: 69%;
+    }
+    .cross-two{
+        top: 108%;
+    }
+
+    /* Style pour card-overview */
+    .subtotal{
+        margin: 8px 0 8px -6px;
+        position: relative;
+    }
+    .subtotal-article{
+        position: absolute;
+        top: -13px;
+    }
+    .totat-title{
+        position: relative;
+    }
+    .total-articles{
+        position: absolute;
+        right: 42px;
+    }
+    .continue{
+        position: relative;
+        left: 75px;
+        text-decoration-line: none;
+    }
+    .last-separator{
+        background-color: black;
+    }
+    .border-continue{
+        border-bottom : 1px solid;
+    }
+    .border-checkout{
+        margin: 30px 0 10px 0;
+    }
+    .checkout{
+        position: relative;
+        right: 59px;
+    }
+}
+
+/* Style pour un écran de 375px */
+@media screen and (max-width: 375px) {
+    .cart-description {
+        padding: 30px 20px 0px 20px;
+        width: 360px;
+    }
+    .less, .plus, .plus-two, .less-two {
+        margin-left: 8px;
+        float: left;
+        position: absolute;
+        left: 78px;
+    }
+    .plus {
+        bottom: 146px;
+    }
+    .plus-two {
+        top: 477px;
+    }
+    .less {
+        bottom: 118px;
+    }
+    .less-two {
+        top: 505px;
+    }
+    .price-article, .price-article-two {
+        padding-left: 219px;
+        width: 350px;
+        position: absolute;
+        color: grey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+    }
+    .price-article {
+        top: 65%;
+    }
+    .cross {
+        top: 67%;
+    }
+    .total-articles {
+        right: 27px;
     }
 }

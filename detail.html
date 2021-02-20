@@ -37,41 +37,43 @@
             <!-- Left elements -->
 
             <!-- Center elements -->
-            <ul class="navbar-nav flex-row d-none d-md-flex">
+            <div class="center-element">
+                <ul class="navbar-nav flex-row d-none d-md-flex">
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
 
-                <!-- Navbar dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-mdb-toggle="dropdown" aria-expanded="false">
-                        SHOP
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="shoppingCart.html">SHOPPING CART</a></li>
-                        <li><a class="dropdown-item" href="#">SHOP 2</a></li>
-                    </ul>
-                </li>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            SHOP
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="shoppingCart.html">SHOPPING CART</a></li>
+                            <li><a class="dropdown-item" href="#">SHOP 2</a></li>
+                        </ul>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">JOURNAL</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">JOURNAL</a>
+                    </li>
 
-                <!-- Navbar dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-mdb-toggle="dropdown" aria-expanded="false">
-                        MORE
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">MORE 1</a></li>
-                        <li><a class="dropdown-item" href="#">MORE 2</a></li>
-                    </ul>
-            </ul>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            MORE
+                        </a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">MORE 1</a></li>
+                            <li><a class="dropdown-item" href="#">MORE 2</a></li>
+                        </ul>
+                </ul>
+            </div>
             <!-- Center elements -->
 
             <!-- Right elements -->
@@ -84,7 +86,7 @@
 
                 <!-- Navbar dropdown -->
                 <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle dropdown-arrow" href="#" id="navbarDropdown" role="button"
                         data-mdb-toggle="dropdown" aria-expanded="false">
                         <span class='shopping'>MY CART (2)</span>
                     </a>
@@ -162,7 +164,7 @@
     </nav>
 
     <!-- breadcrumb -->
-    <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+    <nav aria-label="breadcrumb" class="d-flex justify-content-center bdrcmb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"> <strong>HOME</strong> </li>
             <li class="breadcrumb-item"> <strong>PLATES</strong></li>
@@ -181,10 +183,11 @@
 
                         <div class="row product-gallery mx-1">
 
-                            <div class="col-12 mb-0">
+                            <div class="col-md-12 mb-0">
                                 <figure class="view overlay rounded z-depth-1 main-img">
                                     <a>
-                                        <img class="hand-painted" src="./media/hand-painted-blue-flat-dish.jpg" class="img-fluid z-depth-1">
+                                        <img class="hand-painted" src="./media/hand-painted-blue-flat-dish.jpg"
+                                            class="img-fluid z-depth-1">
                                     </a>
                                 </figure>
                             </div>
@@ -196,15 +199,15 @@
                 </div>
 
                 <div class="col-md-5 article-description">
-                    <p class="mb-2 text-muted small text-center">Kiriko</p>
+                    <p class="mb-2 text-muted small text-center article-cat">Kiriko</p>
 
                     <h2 class="text-center title-description">Hand Painted Blue Flat Dish</h2>
 
-                    <p class="text-center"><span class="mr-1">
-                            <strong >$28.00</strong>
+                    <p class="text-center price-one-art"><span class="mr-1">
+                            <span class="price-article">$28.00</span>
                         </span></p>
 
-                    <p class="pt-1 text-center">
+                    <p class="pt-1 text-center description-art">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam at purus pulvinar, placerat
                         turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. curbitur ac
                         pharetra nisl, sit amet...
@@ -213,12 +216,12 @@
                     <hr>
 
                     <div class="table-responsive mb-2 text-center ">
-                        
+
                         <div class="pl-0 quantity-article">
                             <div class="col-sm">
                                 <div class="row">
 
-                                    <div class="col-md-2 d-flex justify-content-end">
+                                    <div class="col-md-2 d-flex justify-content-end quantity-art">
                                         <div class="well text-center quantity">1
                                         </div>
                                     </div>
@@ -226,22 +229,24 @@
                                     <div class="col-md-2  quantity-col">
 
                                         <div class="row">
-                                            <div class="params-button">
+                                            <div class="params-button ">
                                                 <div class="well plus">+ </div>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="params-button">
+                                            <div class="params-button ">
                                                 <div class="well less"> - </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
 
                                     <div class="col-md-8">
                                         <div class="mt-1 button-add-to-cart">
-                                            <button type="button" class="btn btn-dark btn-lg btn-md mr-1 mb-2 add-to-cart"> Add to cart </button>
+                                            <button type="button"
+                                                class="btn btn-dark btn-lg btn-md mr-1 mb-2 add-to-cart"> Add to cart
+                                            </button>
                                         </div>
                                     </div>
 

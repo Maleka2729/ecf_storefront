@@ -198,7 +198,7 @@ h1{
     }
     .button-validation,
     .total-price{
-        font-size: 11px;
+        font-size: 10px;
     }
     .img-mouseover:hover + .mousover-button {
         display: block;
