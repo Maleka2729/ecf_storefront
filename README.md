@@ -24,4 +24,4 @@ Page « Detail article » (detail.html) :
   - Le boutons « Views detail », dans le menu dropdown, renvoie sur la  page “Shopping Cart ».
 
 ### Installation du projet :
-Pour installer le projet « Storefront », il faut que vous téléchargez le dossier du projet via Github desktop, et ensuite ouvrir le fichier index.html
+Pour installer le projet « ecf_storefront », il faut que vous téléchargez le dossier du projet via Github desktop, et ensuite ouvrir le fichier index.html, ou y accéder directement via le lien ci-joint:  https://maleka2729.github.io/ecf_storefront/
